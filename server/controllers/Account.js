@@ -63,7 +63,7 @@ const signup = (request, response) => {
     const accountData = {
       username: req.body.username,
       salt,
-      pasword: hash,
+      password: hash,
     };
 
     const newAccount = new Account.AccountModel(accountData);
